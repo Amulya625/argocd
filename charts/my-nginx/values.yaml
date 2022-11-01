@@ -1,8 +1,4 @@
 replicaCount: 3
 name: nginx
-metadata:
-  labels:
-    app: nginx
-      name: nginx
 service:
        type: NodePort
