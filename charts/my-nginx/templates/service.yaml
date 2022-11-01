@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: nginx
-  name: nginx
+  name: {{ .Values.metadata.labels.name }}
   namespace: default
 spec:
   ports:
