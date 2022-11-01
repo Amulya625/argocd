@@ -1,4 +1,7 @@
 replicaCount: 1
 name: nginx
+spec:
+      containers:
+      - image: nginx
 service:
        type: NodePort
