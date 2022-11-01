@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
-  name: {{ .Values.metadata.labels.name }}
+  name: nginx
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: nginx
   selector:
     matchLabels:
       app: nginx
   template:
     metadata:
       labels:
-        app: {{ .Values.metadata.labels.app }}
+        app: nginx
     spec:
       containers:
       - image: nginx
