@@ -3,6 +3,6 @@ name: nginx
 metadata:
   labels:
     app: nginx
-    name: nginx
+      name: nginx
 service:
        type: NodePort
