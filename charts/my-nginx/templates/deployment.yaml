@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: {{ .Values.spec.containers.image }}
+      - image: {{ .Values.containers.image }}
         name: nginx
