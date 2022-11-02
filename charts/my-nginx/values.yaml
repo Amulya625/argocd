@@ -1,6 +1,10 @@
 replicaCount: 1
 deployment:
-       image: nginx
+        image: nginx
+        app: nginx
+        name: nginx
 service:
+       name: nginx
+       app: nginx
        type: NodePort
        
