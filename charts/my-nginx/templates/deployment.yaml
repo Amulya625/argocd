@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: {{ .Values.deployment.app }}
+  name: {{ .Values.deployment.name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: nginx
+      app: {{ .Values.deployment.app }}
   template:
     metadata:
       labels:
-        app: nginx
+        app: {{ .Values.deployment.app }}
     spec:
       containers:
       - image: {{ .Values.deployment.image }}
-        name: nginx
+        name: {{ .Values.deployment.name }}
