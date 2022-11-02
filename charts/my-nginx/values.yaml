@@ -1,4 +1,6 @@
 replicaCount: 1
-name: nginx
+deployment:
+       image: nginx
 service:
        type: NodePort
+       
