@@ -3,6 +3,7 @@ deployment:
         image: nginx
         app: nginx
         name: nginx
+        namespace: test
 service:
        name: nginx
        app: nginx
