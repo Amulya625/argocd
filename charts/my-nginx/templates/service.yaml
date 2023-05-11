@@ -4,7 +4,7 @@ metadata:
   labels:
     app: {{ .Values.service.app }}
   name: {{ .Values.service.name }}
-  namespace: default
+  namespace: {{ .Values.deployment.namespace }}
 spec:
   ports:
   - port: 80
